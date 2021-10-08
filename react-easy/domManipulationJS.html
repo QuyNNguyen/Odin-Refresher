@@ -1,0 +1,43 @@
+
+<DOCTYPE! html>
+<head></head>
+<body>
+  <h1>
+    THE TITLE OF YOUR WEBPAGE
+  </h1>
+  <div id="container">
+  	<div class="content">
+      This is the glorious -content!
+    </div>
+  </div>
+</body>
+
+<script>
+  // Creating the p
+const p = document.createElement('p');
+p.style.color = 'red';
+p.textContent = "Hey I'm red!";
+
+//Creating th h3
+const h3 = document.createElement("h3");
+h3.style.color ='blue';
+h3.textContent = "I'm a blue h3!";
+
+//Creating div 
+const newDiv = document.createElement("div");
+newDiv.setAttribute('style', 'border-color:black; background-color:pink; ');
+const h1 = document.createElement("h1");
+h1.textContent = "I'm in a pink Div"
+const p1 = document.createElement("p");
+p1.textContent = "Metoo";
+newDiv.append(h1);
+newDiv.append(p1);
+
+//Appending the p 
+const content = document.querySelector(".content");
+content.appendChild(p);
+content.appendChild(h3);
+content.appendChild(newDiv);
+
+console.log(newDiv);
+</script>
